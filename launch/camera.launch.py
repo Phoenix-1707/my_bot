@@ -15,7 +15,8 @@ def generate_launch_description():
             output='screen',
             parameters=[{
                 'image_size': [640,480],
-                'camera_frame_id': 'camera_link_optical'
+                'camera_frame_id': 'camera_link_optical',
+                'device_path': '/dev/video0'
                 }]
     )
     ])
