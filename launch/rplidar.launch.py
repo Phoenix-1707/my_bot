@@ -10,7 +10,7 @@ def generate_launch_description():
             executable='sllidar_node',
             output='screen',
             parameters=[{
-                'serial_port': 'pci-0000:05:00.4-usb-0:2:1.0-port0',
+                'serial_port': '/dev/serial/by-path/pci-0000:05:00.4-usb-0:2:1.0-port0',
                 'frame_id': 'laser_frame',
                 'angle_compensate': True,
                 'scan_mode': 'DenseBoost'
